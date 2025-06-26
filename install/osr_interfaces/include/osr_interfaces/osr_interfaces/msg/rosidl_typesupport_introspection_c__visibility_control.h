@@ -1,0 +1,1 @@
+/home/rover/osr_ws/build/osr_interfaces/rosidl_typesupport_introspection_c/osr_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h

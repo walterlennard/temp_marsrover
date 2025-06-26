@@ -1,0 +1,21 @@
+[2.552s] Invoking command in '/home/rover/osr_ws/build/osr_control': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/rover/osr_ws/build/osr_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages:/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages:/home/rover/osr_ws/build/osr_control:/home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rover/osr_ws/build/osr_control/build --no-deps symlink_data
+[3.570s] running develop
+[4.165s] running egg_info
+[4.165s] writing osr_control.egg-info/PKG-INFO
+[4.166s] writing dependency_links to osr_control.egg-info/dependency_links.txt
+[4.167s] writing entry points to osr_control.egg-info/entry_points.txt
+[4.168s] writing requirements to osr_control.egg-info/requires.txt
+[4.169s] writing top-level names to osr_control.egg-info/top_level.txt
+[4.176s] reading manifest file 'osr_control.egg-info/SOURCES.txt'
+[4.179s] writing manifest file 'osr_control.egg-info/SOURCES.txt'
+[4.185s] running build_ext
+[4.186s] Creating /home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages/osr-control.egg-link (link to .)
+[4.190s] Installing ina260 script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+[4.190s] Installing joy_extras script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+[4.191s] Installing roboclaw_wrapper script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+[4.192s] Installing rover script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+[4.193s] Installing servo_control script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+[4.194s] 
+[4.194s] Installed /home/rover/osr_ws/build/osr_control
+[4.195s] running symlink_data
+[4.324s] Invoked command in '/home/rover/osr_ws/build/osr_control' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/rover/osr_ws/build/osr_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages:/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages:/home/rover/osr_ws/build/osr_control:/home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rover/osr_ws/build/osr_control/build --no-deps symlink_data

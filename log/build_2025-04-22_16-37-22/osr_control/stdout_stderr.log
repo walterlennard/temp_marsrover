@@ -1,0 +1,28 @@
+running develop
+running egg_info
+creating osr_control.egg-info
+writing osr_control.egg-info/PKG-INFO
+writing dependency_links to osr_control.egg-info/dependency_links.txt
+writing entry points to osr_control.egg-info/entry_points.txt
+writing requirements to osr_control.egg-info/requires.txt
+writing top-level names to osr_control.egg-info/top_level.txt
+writing manifest file 'osr_control.egg-info/SOURCES.txt'
+reading manifest file 'osr_control.egg-info/SOURCES.txt'
+writing manifest file 'osr_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages/osr-control.egg-link (link to .)
+Installing ina260 script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+Installing joy_extras script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+Installing roboclaw_wrapper script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+Installing rover script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+Installing servo_control script to /home/rover/osr_ws/install/osr_control/lib/osr_control
+
+Installed /home/rover/osr_ws/build/osr_control
+running symlink_data
+creating /home/rover/osr_ws/install/osr_control/share/ament_index
+creating /home/rover/osr_ws/install/osr_control/share/ament_index/resource_index
+creating /home/rover/osr_ws/install/osr_control/share/ament_index/resource_index/packages
+symbolically linking /home/rover/osr_ws/build/osr_control/resource/osr_control -> /home/rover/osr_ws/install/osr_control/share/ament_index/resource_index/packages
+symbolically linking /home/rover/osr_ws/build/osr_control/package.xml -> /home/rover/osr_ws/install/osr_control/share/osr_control
+creating /home/rover/osr_ws/install/osr_control/share/osr_control/launch
+creating /home/rover/osr_ws/install/osr_control/share/osr_control/config

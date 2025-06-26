@@ -1,0 +1,165 @@
+[0.057s] Invoking command in '/home/rover/osr_ws/build/osr_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rover/osr_ws/install/osr_control:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rover/osr_ws/build/osr_interfaces -- -j4 -l4
+[0.235s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_generator_c[0m
+[0.280s] [  2%] Built target osr_interfaces__cpp
+[0.291s] [ 12%] Built target osr_interfaces__rosidl_generator_c
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_cpp[0m
+[0.353s] [ 12%] Built target ament_cmake_python_symlink_osr_interfaces
+[0.360s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.360s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.426s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.439s] [ 23%] Built target osr_interfaces__rosidl_typesupport_cpp
+[0.439s] [ 34%] Built target osr_interfaces__rosidl_typesupport_introspection_cpp
+[0.481s] [ 44%] Built target osr_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.489s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_c[0m
+[0.505s] [ 55%] Built target osr_interfaces__rosidl_typesupport_fastrtps_c
+[0.521s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_introspection_c[0m
+[0.558s] [ 65%] Built target osr_interfaces__rosidl_typesupport_c
+[0.577s] [ 76%] Built target osr_interfaces__rosidl_typesupport_introspection_c
+[0.658s] [ 76%] Built target osr_interfaces
+[0.741s] [ 78%] Built target osr_interfaces__py
+[0.787s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_generator_py[0m
+[0.855s] [ 87%] Built target osr_interfaces__rosidl_generator_py
+[0.903s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.905s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[0.910s] [35m[1mConsolidate compiler generated dependencies of target osr_interfaces__rosidl_typesupport_c__pyext[0m
+[0.971s] [ 91%] Built target osr_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.974s] [ 95%] Built target osr_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.982s] [100%] Built target osr_interfaces__rosidl_typesupport_c__pyext
+[1.386s] running egg_info
+[1.388s] writing osr_interfaces.egg-info/PKG-INFO
+[1.389s] writing dependency_links to osr_interfaces.egg-info/dependency_links.txt
+[1.390s] writing top-level names to osr_interfaces.egg-info/top_level.txt
+[1.398s] reading manifest file 'osr_interfaces.egg-info/SOURCES.txt'
+[1.401s] writing manifest file 'osr_interfaces.egg-info/SOURCES.txt'
+[1.527s] [100%] Built target ament_cmake_python_build_osr_interfaces_egg
+[1.567s] Invoked command in '/home/rover/osr_ws/build/osr_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rover/osr_ws/install/osr_control:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/rover/osr_ws/build/osr_interfaces -- -j4 -l4
+[1.576s] Invoking command in '/home/rover/osr_ws/build/osr_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rover/osr_ws/install/osr_control:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rover/osr_ws/build/osr_interfaces
+[1.604s] -- Install configuration: ""
+[1.606s] -- Execute custom install script
+[1.608s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/rosidl_interfaces/osr_interfaces
+[1.611s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_corner.h
+[1.611s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_drive.h
+[1.612s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__functions.h
+[1.613s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__struct.h
+[1.614s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__type_support.h
+[1.615s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__functions.h
+[1.615s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__struct.h
+[1.616s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__type_support.h
+[1.617s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__functions.h
+[1.618s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__struct.h
+[1.619s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__type_support.h
+[1.620s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.620s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/status.h
+[1.621s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/library_path.sh
+[1.622s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/library_path.dsv
+[1.626s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_fastrtps_c.h
+[1.627s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_fastrtps_c.h
+[1.627s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_fastrtps_c.h
+[1.628s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.631s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_introspection_c.h
+[1.631s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_introspection_c.h
+[1.632s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_introspection_c.h
+[1.633s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.636s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_corner.hpp
+[1.637s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_drive.hpp
+[1.638s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__builder.hpp
+[1.638s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__struct.hpp
+[1.639s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__traits.hpp
+[1.640s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__type_support.hpp
+[1.641s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__builder.hpp
+[1.642s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__struct.hpp
+[1.643s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__traits.hpp
+[1.643s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__type_support.hpp
+[1.644s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__builder.hpp
+[1.645s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__struct.hpp
+[1.646s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__traits.hpp
+[1.647s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__type_support.hpp
+[1.648s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.648s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/status.hpp
+[1.652s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_fastrtps_cpp.hpp
+[1.653s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_fastrtps_cpp.hpp
+[1.654s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.655s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.657s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_introspection_cpp.hpp
+[1.658s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_introspection_cpp.hpp
+[1.659s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp
+[1.660s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/pythonpath.sh
+[1.660s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/pythonpath.dsv
+[1.662s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.663s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.664s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.665s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.669s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/__init__.py
+[1.670s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_c.c
+[1.671s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.672s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.672s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/libosr_interfaces__rosidl_generator_py.so
+[1.673s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/__init__.py
+[1.674s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_corner.py
+[1.675s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_corner_s.c
+[1.675s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_drive.py
+[1.676s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_drive_s.c
+[1.677s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_status.py
+[1.678s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_status_s.c
+[1.679s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.679s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.680s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.682s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.683s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.684s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.685s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/Status.idl
+[1.686s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandDrive.idl
+[1.687s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandCorner.idl
+[1.688s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/Status.msg
+[1.689s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandDrive.msg
+[1.690s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandCorner.msg
+[1.691s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/package_run_dependencies/osr_interfaces
+[1.692s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/parent_prefix_path/osr_interfaces
+[1.693s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/ament_prefix_path.sh
+[1.694s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/ament_prefix_path.dsv
+[1.694s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/path.sh
+[1.695s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/path.dsv
+[1.696s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.bash
+[1.697s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.sh
+[1.698s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.zsh
+[1.699s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.dsv
+[1.699s] -- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/package.dsv
+[1.731s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/packages/osr_interfaces
+[1.731s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.732s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.733s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.734s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.735s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.736s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.737s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.738s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfacesConfig.cmake
+[1.738s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfacesConfig-version.cmake
+[1.739s] -- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/package.xml
+[1.741s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_generator_c.so
+[1.742s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.744s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_introspection_c.so
+[1.746s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_c.so
+[1.748s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.750s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.751s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_cpp.so
+[1.903s] Listing '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces'...
+[1.904s] Listing '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg'...
+[1.931s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_generator_py.so
+[1.932s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_cExport.cmake
+[1.933s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.933s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.934s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.935s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.935s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.936s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cExport.cmake
+[1.936s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.937s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_cppExport.cmake
+[1.938s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.939s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.940s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.941s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.942s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cppExport.cmake
+[1.942s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.943s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_pyExport.cmake
+[1.944s] -- Up-to-date: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.952s] Invoked command in '/home/rover/osr_ws/build/osr_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rover/osr_ws/install/osr_control:/opt/ros/humble PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/rover/osr_ws/build/osr_interfaces

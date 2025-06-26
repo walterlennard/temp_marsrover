@@ -1,0 +1,542 @@
+[0.000000] (-) TimerEvent: {}
+[0.001594] (osr_bringup) JobQueued: {'identifier': 'osr_bringup', 'dependencies': OrderedDict()}
+[0.001720] (osr_interfaces) JobQueued: {'identifier': 'osr_interfaces', 'dependencies': OrderedDict()}
+[0.001802] (osr_control) JobQueued: {'identifier': 'osr_control', 'dependencies': OrderedDict([('osr_interfaces', '/home/rover/osr_ws/install/osr_interfaces')])}
+[0.001891] (osr_interfaces) JobStarted: {'identifier': 'osr_interfaces'}
+[0.024792] (osr_bringup) JobStarted: {'identifier': 'osr_bringup'}
+[0.042719] (osr_interfaces) JobProgress: {'identifier': 'osr_interfaces', 'progress': 'cmake'}
+[0.045695] (osr_interfaces) JobProgress: {'identifier': 'osr_interfaces', 'progress': 'build'}
+[0.048432] (osr_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rover/osr_ws/build/osr_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/rover/osr_ws/build/osr_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rover'), ('SSH_CLIENT', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rover'), ('OLDPWD', '/home/rover/osr_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rover'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rover/osr_ws/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/rover/osr_ws/venv'), ('PWD', '/home/rover/osr_ws/build/osr_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 fe80::e65f:1ff:fe0c:4181%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.064654] (osr_bringup) JobProgress: {'identifier': 'osr_bringup', 'progress': 'cmake'}
+[0.067683] (osr_bringup) JobProgress: {'identifier': 'osr_bringup', 'progress': 'build'}
+[0.069028] (osr_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rover/osr_ws/build/osr_bringup', '--', '-j4', '-l4'], 'cwd': '/home/rover/osr_ws/build/osr_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rover'), ('SSH_CLIENT', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rover'), ('OLDPWD', '/home/rover/osr_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rover'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rover/osr_ws/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/rover/osr_ws/venv'), ('PWD', '/home/rover/osr_ws/build/osr_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 fe80::e65f:1ff:fe0c:4181%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099137] (-) TimerEvent: {}
+[0.200151] (-) TimerEvent: {}
+[0.216828] (osr_bringup) CommandEnded: {'returncode': 0}
+[0.219153] (osr_bringup) JobProgress: {'identifier': 'osr_bringup', 'progress': 'install'}
+[0.219579] (osr_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.252429] (osr_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rover/osr_ws/build/osr_bringup'], 'cwd': '/home/rover/osr_ws/build/osr_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rover'), ('SSH_CLIENT', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rover'), ('OLDPWD', '/home/rover/osr_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rover'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rover/osr_ws/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/rover/osr_ws/venv'), ('PWD', '/home/rover/osr_ws/build/osr_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 fe80::e65f:1ff:fe0c:4181%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.275446] (osr_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.294745] (osr_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.297049] (osr_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.300443] (-) TimerEvent: {}
+[0.302883] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/launch/.gitignore\n'}
+[0.303539] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/launch/osr_launch.py\n'}
+[0.304982] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/config/osr_params.yaml\n'}
+[0.306069] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/config/roboclaw_params.yaml\n'}
+[0.307483] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/ament_index/resource_index/package_run_dependencies/osr_bringup\n'}
+[0.308798] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/ament_index/resource_index/parent_prefix_path/osr_bringup\n'}
+[0.309963] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/environment/ament_prefix_path.sh\n'}
+[0.311116] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/environment/ament_prefix_path.dsv\n'}
+[0.312431] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/environment/path.sh\n'}
+[0.313932] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/environment/path.dsv\n'}
+[0.315755] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/local_setup.bash\n'}
+[0.316694] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/local_setup.sh\n'}
+[0.318058] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/local_setup.zsh\n'}
+[0.318858] (osr_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_osr_interfaces\n'}
+[0.323339] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/local_setup.dsv\n'}
+[0.324155] (osr_bringup) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/package.dsv\n'}
+[0.361524] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/ament_index/resource_index/packages/osr_bringup\n'}
+[0.362860] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/cmake/osr_bringupConfig.cmake\n'}
+[0.363797] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/cmake/osr_bringupConfig-version.cmake\n'}
+[0.365351] (osr_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_bringup/share/osr_bringup/package.xml\n'}
+[0.384153] (osr_bringup) CommandEnded: {'returncode': 0}
+[0.400623] (-) TimerEvent: {}
+[0.498669] (osr_bringup) JobEnded: {'identifier': 'osr_bringup', 'rc': 0}
+[0.501859] (-) TimerEvent: {}
+[0.603385] (-) TimerEvent: {}
+[0.705383] (-) TimerEvent: {}
+[0.808364] (-) TimerEvent: {}
+[0.910440] (-) TimerEvent: {}
+[1.012080] (-) TimerEvent: {}
+[1.113640] (-) TimerEvent: {}
+[1.215169] (-) TimerEvent: {}
+[1.316703] (-) TimerEvent: {}
+[1.339727] (osr_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.342574] (osr_interfaces) StdoutLine: {'line': b'writing osr_interfaces.egg-info/PKG-INFO\n'}
+[1.343930] (osr_interfaces) StdoutLine: {'line': b'writing dependency_links to osr_interfaces.egg-info/dependency_links.txt\n'}
+[1.345429] (osr_interfaces) StdoutLine: {'line': b'writing top-level names to osr_interfaces.egg-info/top_level.txt\n'}
+[1.354001] (osr_interfaces) StdoutLine: {'line': b"reading manifest file 'osr_interfaces.egg-info/SOURCES.txt'\n"}
+[1.357250] (osr_interfaces) StdoutLine: {'line': b"writing manifest file 'osr_interfaces.egg-info/SOURCES.txt'\n"}
+[1.416972] (-) TimerEvent: {}
+[1.499481] (osr_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_osr_interfaces_egg\n'}
+[1.517124] (-) TimerEvent: {}
+[1.617765] (-) TimerEvent: {}
+[1.718430] (-) TimerEvent: {}
+[1.819079] (-) TimerEvent: {}
+[1.919812] (-) TimerEvent: {}
+[2.021206] (-) TimerEvent: {}
+[2.122979] (-) TimerEvent: {}
+[2.224381] (-) TimerEvent: {}
+[2.324408] (osr_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_generator_c.dir/rosidl_generator_c/osr_interfaces/msg/detail/status__functions.c.o\x1b[0m\n'}
+[2.325395] (-) TimerEvent: {}
+[2.327733] (osr_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_generator_c.dir/rosidl_generator_c/osr_interfaces/msg/detail/command_drive__functions.c.o\x1b[0m\n'}
+[2.334923] (osr_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_generator_c.dir/rosidl_generator_c/osr_interfaces/msg/detail/command_corner__functions.c.o\x1b[0m\n'}
+[2.389445] (osr_interfaces) StdoutLine: {'line': b'[ 10%] Built target osr_interfaces__cpp\n'}
+[2.425667] (-) TimerEvent: {}
+[2.430085] (osr_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.526360] (-) TimerEvent: {}
+[2.627547] (-) TimerEvent: {}
+[2.672959] (osr_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.674374] (osr_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.693653] (osr_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libosr_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.727866] (-) TimerEvent: {}
+[2.829587] (-) TimerEvent: {}
+[2.906379] (osr_interfaces) StdoutLine: {'line': b'[ 19%] Built target osr_interfaces__rosidl_generator_c\n'}
+[2.929794] (-) TimerEvent: {}
+[2.956133] (osr_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.030055] (-) TimerEvent: {}
+[3.131066] (-) TimerEvent: {}
+[3.232148] (-) TimerEvent: {}
+[3.332981] (-) TimerEvent: {}
+[3.433741] (-) TimerEvent: {}
+[3.534540] (-) TimerEvent: {}
+[3.635371] (-) TimerEvent: {}
+[3.736144] (-) TimerEvent: {}
+[3.836973] (-) TimerEvent: {}
+[3.937808] (-) TimerEvent: {}
+[4.039088] (-) TimerEvent: {}
+[4.139870] (-) TimerEvent: {}
+[4.141073] (osr_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/osr_interfaces/msg/status__type_support.cpp.o\x1b[0m\n'}
+[4.240107] (-) TimerEvent: {}
+[4.341608] (-) TimerEvent: {}
+[4.442908] (-) TimerEvent: {}
+[4.545385] (-) TimerEvent: {}
+[4.647761] (-) TimerEvent: {}
+[4.660779] (osr_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/osr_interfaces/msg/detail/status__type_support.cpp.o\x1b[0m\n'}
+[4.748101] (-) TimerEvent: {}
+[4.802089] (osr_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/osr_interfaces/msg/detail/dds_fastrtps/status__type_support.cpp.o\x1b[0m\n'}
+[4.848319] (-) TimerEvent: {}
+[4.949271] (-) TimerEvent: {}
+[5.051111] (-) TimerEvent: {}
+[5.060908] (osr_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/osr_interfaces/msg/detail/status__type_support_c.cpp.o\x1b[0m\n'}
+[5.151338] (-) TimerEvent: {}
+[5.253109] (-) TimerEvent: {}
+[5.354969] (-) TimerEvent: {}
+[5.456996] (-) TimerEvent: {}
+[5.559103] (-) TimerEvent: {}
+[5.661752] (-) TimerEvent: {}
+[5.763761] (-) TimerEvent: {}
+[5.865434] (-) TimerEvent: {}
+[5.966478] (-) TimerEvent: {}
+[6.034055] (osr_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/osr_interfaces/msg/command_drive__type_support.cpp.o\x1b[0m\n'}
+[6.066894] (-) TimerEvent: {}
+[6.168953] (-) TimerEvent: {}
+[6.270682] (-) TimerEvent: {}
+[6.372218] (-) TimerEvent: {}
+[6.474139] (-) TimerEvent: {}
+[6.576821] (-) TimerEvent: {}
+[6.678596] (-) TimerEvent: {}
+[6.781026] (-) TimerEvent: {}
+[6.883128] (-) TimerEvent: {}
+[6.984808] (-) TimerEvent: {}
+[7.086450] (-) TimerEvent: {}
+[7.188612] (-) TimerEvent: {}
+[7.219765] (osr_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/osr_interfaces/msg/detail/command_drive__type_support.cpp.o\x1b[0m\n'}
+[7.236804] (osr_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/osr_interfaces/msg/detail/command_drive__type_support_c.cpp.o\x1b[0m\n'}
+[7.289090] (-) TimerEvent: {}
+[7.365597] (osr_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/osr_interfaces/msg/detail/dds_fastrtps/command_drive__type_support.cpp.o\x1b[0m\n'}
+[7.389322] (-) TimerEvent: {}
+[7.490328] (-) TimerEvent: {}
+[7.591782] (-) TimerEvent: {}
+[7.691090] (osr_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/osr_interfaces/msg/command_corner__type_support.cpp.o\x1b[0m\n'}
+[7.692275] (-) TimerEvent: {}
+[7.794443] (-) TimerEvent: {}
+[7.896063] (-) TimerEvent: {}
+[7.996912] (-) TimerEvent: {}
+[8.098073] (-) TimerEvent: {}
+[8.199151] (-) TimerEvent: {}
+[8.300222] (-) TimerEvent: {}
+[8.401293] (-) TimerEvent: {}
+[8.502646] (-) TimerEvent: {}
+[8.604105] (-) TimerEvent: {}
+[8.705383] (-) TimerEvent: {}
+[8.806568] (-) TimerEvent: {}
+[8.908401] (-) TimerEvent: {}
+[9.010317] (-) TimerEvent: {}
+[9.112528] (-) TimerEvent: {}
+[9.214430] (-) TimerEvent: {}
+[9.283630] (osr_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/osr_interfaces/msg/detail/command_corner__type_support_c.cpp.o\x1b[0m\n'}
+[9.314772] (-) TimerEvent: {}
+[9.384560] (osr_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libosr_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.415033] (-) TimerEvent: {}
+[9.515594] (osr_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/osr_interfaces/msg/detail/command_corner__type_support.cpp.o\x1b[0m\n'}
+[9.517645] (-) TimerEvent: {}
+[9.571835] (osr_interfaces) StdoutLine: {'line': b'[ 46%] Built target osr_interfaces__rosidl_typesupport_cpp\n'}
+[9.607879] (osr_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/osr_interfaces/msg/detail/dds_fastrtps/command_corner__type_support.cpp.o\x1b[0m\n'}
+[9.617829] (-) TimerEvent: {}
+[9.719269] (-) TimerEvent: {}
+[9.820323] (osr_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.821147] (-) TimerEvent: {}
+[9.923166] (-) TimerEvent: {}
+[10.025011] (-) TimerEvent: {}
+[10.127060] (-) TimerEvent: {}
+[10.229095] (-) TimerEvent: {}
+[10.330794] (-) TimerEvent: {}
+[10.432316] (-) TimerEvent: {}
+[10.533963] (-) TimerEvent: {}
+[10.635744] (-) TimerEvent: {}
+[10.737491] (-) TimerEvent: {}
+[10.839126] (-) TimerEvent: {}
+[10.941305] (-) TimerEvent: {}
+[11.043305] (-) TimerEvent: {}
+[11.144999] (-) TimerEvent: {}
+[11.246567] (-) TimerEvent: {}
+[11.315476] (osr_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libosr_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.346948] (-) TimerEvent: {}
+[11.448870] (-) TimerEvent: {}
+[11.550691] (-) TimerEvent: {}
+[11.652233] (-) TimerEvent: {}
+[11.703671] (osr_interfaces) StdoutLine: {'line': b'[ 53%] Built target osr_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[11.751302] (osr_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.752369] (-) TimerEvent: {}
+[11.854482] (-) TimerEvent: {}
+[11.957187] (-) TimerEvent: {}
+[11.986755] (osr_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libosr_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.057406] (-) TimerEvent: {}
+[12.159176] (-) TimerEvent: {}
+[12.183107] (osr_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/osr_interfaces/msg/detail/status__type_support.c.o\x1b[0m\n'}
+[12.213676] (osr_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libosr_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.259402] (-) TimerEvent: {}
+[12.360188] (-) TimerEvent: {}
+[12.403272] (osr_interfaces) StdoutLine: {'line': b'[ 61%] Built target osr_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[12.441912] (osr_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/osr_interfaces/msg/detail/command_drive__type_support.c.o\x1b[0m\n'}
+[12.445485] (osr_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/osr_interfaces/msg/detail/command_corner__type_support.c.o\x1b[0m\n'}
+[12.460389] (-) TimerEvent: {}
+[12.562005] (-) TimerEvent: {}
+[12.593808] (osr_interfaces) StdoutLine: {'line': b'[ 65%] Built target osr_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[12.626961] (osr_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libosr_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.662188] (-) TimerEvent: {}
+[12.744015] (osr_interfaces) StdoutLine: {'line': b'[ 68%] Built target osr_interfaces__rosidl_typesupport_introspection_c\n'}
+[12.762363] (-) TimerEvent: {}
+[12.863019] (-) TimerEvent: {}
+[12.963675] (-) TimerEvent: {}
+[13.064292] (-) TimerEvent: {}
+[13.164862] (-) TimerEvent: {}
+[13.265553] (-) TimerEvent: {}
+[13.361104] (osr_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/osr_interfaces/msg/status__type_support.cpp.o\x1b[0m\n'}
+[13.362578] (osr_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/osr_interfaces/msg/command_drive__type_support.cpp.o\x1b[0m\n'}
+[13.365363] (osr_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/osr_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/osr_interfaces/msg/command_corner__type_support.cpp.o\x1b[0m\n'}
+[13.365970] (-) TimerEvent: {}
+[13.466907] (-) TimerEvent: {}
+[13.506546] (osr_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libosr_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.567111] (-) TimerEvent: {}
+[13.660697] (osr_interfaces) StdoutLine: {'line': b'[ 76%] Built target osr_interfaces__rosidl_typesupport_c\n'}
+[13.667369] (-) TimerEvent: {}
+[13.737833] (osr_interfaces) StdoutLine: {'line': b'[ 76%] Built target osr_interfaces\n'}
+[13.767575] (-) TimerEvent: {}
+[13.817087] (osr_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.867733] (-) TimerEvent: {}
+[13.968526] (-) TimerEvent: {}
+[14.069199] (-) TimerEvent: {}
+[14.169835] (-) TimerEvent: {}
+[14.270506] (-) TimerEvent: {}
+[14.371153] (-) TimerEvent: {}
+[14.471773] (-) TimerEvent: {}
+[14.572429] (-) TimerEvent: {}
+[14.673035] (-) TimerEvent: {}
+[14.773852] (-) TimerEvent: {}
+[14.874484] (-) TimerEvent: {}
+[14.975111] (-) TimerEvent: {}
+[15.075715] (-) TimerEvent: {}
+[15.176389] (-) TimerEvent: {}
+[15.277078] (-) TimerEvent: {}
+[15.377668] (-) TimerEvent: {}
+[15.478286] (-) TimerEvent: {}
+[15.578912] (-) TimerEvent: {}
+[15.679553] (-) TimerEvent: {}
+[15.780213] (-) TimerEvent: {}
+[15.880779] (-) TimerEvent: {}
+[15.981523] (-) TimerEvent: {}
+[16.082626] (-) TimerEvent: {}
+[16.160441] (osr_interfaces) StdoutLine: {'line': b'[ 78%] Built target osr_interfaces__py\n'}
+[16.182843] (-) TimerEvent: {}
+[16.242609] (osr_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_generator_py.dir/rosidl_generator_py/osr_interfaces/msg/_status_s.c.o\x1b[0m\n'}
+[16.244640] (osr_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_generator_py.dir/rosidl_generator_py/osr_interfaces/msg/_command_drive_s.c.o\x1b[0m\n'}
+[16.247384] (osr_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_generator_py.dir/rosidl_generator_py/osr_interfaces/msg/_command_corner_s.c.o\x1b[0m\n'}
+[16.283183] (-) TimerEvent: {}
+[16.384915] (-) TimerEvent: {}
+[16.486602] (-) TimerEvent: {}
+[16.588174] (-) TimerEvent: {}
+[16.689019] (-) TimerEvent: {}
+[16.789899] (-) TimerEvent: {}
+[16.890815] (-) TimerEvent: {}
+[16.928673] (osr_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/osr_interfaces/libosr_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[16.991189] (-) TimerEvent: {}
+[17.092200] (-) TimerEvent: {}
+[17.101659] (osr_interfaces) StdoutLine: {'line': b'[ 87%] Built target osr_interfaces__rosidl_generator_py\n'}
+[17.185149] (osr_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.186518] (osr_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.189020] (osr_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/osr_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[17.192388] (-) TimerEvent: {}
+[17.293845] (-) TimerEvent: {}
+[17.395269] (-) TimerEvent: {}
+[17.497064] (-) TimerEvent: {}
+[17.599199] (-) TimerEvent: {}
+[17.647148] (osr_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/osr_interfaces/osr_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[17.670570] (osr_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/osr_interfaces/osr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[17.699474] (-) TimerEvent: {}
+[17.710224] (osr_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/osr_interfaces/osr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[17.799786] (-) TimerEvent: {}
+[17.813610] (osr_interfaces) StdoutLine: {'line': b'[100%] Built target osr_interfaces__rosidl_typesupport_c__pyext\n'}
+[17.842371] (osr_interfaces) StdoutLine: {'line': b'[100%] Built target osr_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[17.884660] (osr_interfaces) StdoutLine: {'line': b'[100%] Built target osr_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[17.900026] (-) TimerEvent: {}
+[17.925691] (osr_interfaces) CommandEnded: {'returncode': 0}
+[17.927709] (osr_interfaces) JobProgress: {'identifier': 'osr_interfaces', 'progress': 'install'}
+[17.932801] (osr_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rover/osr_ws/build/osr_interfaces'], 'cwd': '/home/rover/osr_ws/build/osr_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rover'), ('SSH_CLIENT', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rover'), ('OLDPWD', '/home/rover/osr_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rover'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rover/osr_ws/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/rover/osr_ws/venv'), ('PWD', '/home/rover/osr_ws/build/osr_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 fe80::e65f:1ff:fe0c:4181%wlan0 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[17.960739] (osr_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.962571] (osr_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.963895] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/rosidl_interfaces/osr_interfaces\n'}
+[17.996204] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_corner.h\n'}
+[18.000302] (-) TimerEvent: {}
+[18.026285] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_drive.h\n'}
+[18.055004] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__functions.h\n'}
+[18.085080] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__struct.h\n'}
+[18.100527] (-) TimerEvent: {}
+[18.115055] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__type_support.h\n'}
+[18.144261] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__functions.h\n'}
+[18.174028] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__struct.h\n'}
+[18.200716] (-) TimerEvent: {}
+[18.203942] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__type_support.h\n'}
+[18.233587] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__functions.h\n'}
+[18.262144] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__struct.h\n'}
+[18.292060] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__type_support.h\n'}
+[18.300877] (-) TimerEvent: {}
+[18.321199] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[18.349747] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/status.h\n'}
+[18.379149] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/library_path.sh\n'}
+[18.401056] (-) TimerEvent: {}
+[18.409004] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/library_path.dsv\n'}
+[18.440953] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_fastrtps_c.h\n'}
+[18.471807] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_fastrtps_c.h\n'}
+[18.501279] (-) TimerEvent: {}
+[18.503080] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_fastrtps_c.h\n'}
+[18.532269] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[18.562914] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_introspection_c.h\n'}
+[18.592754] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_introspection_c.h\n'}
+[18.601454] (-) TimerEvent: {}
+[18.622960] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_introspection_c.h\n'}
+[18.652458] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[18.684071] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_corner.hpp\n'}
+[18.701695] (-) TimerEvent: {}
+[18.714247] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/command_drive.hpp\n'}
+[18.743328] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__builder.hpp\n'}
+[18.773671] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__struct.hpp\n'}
+[18.801862] (-) TimerEvent: {}
+[18.802498] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__traits.hpp\n'}
+[18.834129] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__type_support.hpp\n'}
+[18.863285] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__builder.hpp\n'}
+[18.894114] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__struct.hpp\n'}
+[18.902059] (-) TimerEvent: {}
+[18.923845] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__traits.hpp\n'}
+[18.954068] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__type_support.hpp\n'}
+[18.983269] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__builder.hpp\n'}
+[19.002258] (-) TimerEvent: {}
+[19.014474] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__struct.hpp\n'}
+[19.043592] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__traits.hpp\n'}
+[19.072832] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__type_support.hpp\n'}
+[19.101530] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[19.102375] (-) TimerEvent: {}
+[19.133219] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/status.hpp\n'}
+[19.165489] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.196681] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.202635] (-) TimerEvent: {}
+[19.228655] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[19.257668] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[19.290113] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_corner__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.302820] (-) TimerEvent: {}
+[19.320276] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.349440] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/include/osr_interfaces/osr_interfaces/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[19.379418] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/pythonpath.sh\n'}
+[19.403011] (-) TimerEvent: {}
+[19.410612] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/pythonpath.dsv\n'}
+[19.441059] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[19.472320] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[19.501153] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[19.503220] (-) TimerEvent: {}
+[19.530432] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[19.563981] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/__init__.py\n'}
+[19.596918] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[19.603403] (-) TimerEvent: {}
+[19.627824] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[19.658714] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/_osr_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[19.702437] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/libosr_interfaces__rosidl_generator_py.so\n'}
+[19.703549] (-) TimerEvent: {}
+[19.739318] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/__init__.py\n'}
+[19.770327] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_corner.py\n'}
+[19.799424] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_corner_s.c\n'}
+[19.803739] (-) TimerEvent: {}
+[19.830283] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_drive.py\n'}
+[19.859173] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_drive_s.c\n'}
+[19.889820] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_status.py\n'}
+[19.904059] (-) TimerEvent: {}
+[19.920911] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_status_s.c\n'}
+[19.949646] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[19.981062] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[20.004155] (-) TimerEvent: {}
+[20.009925] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[20.040706] (osr_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[20.042029] (osr_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[20.043398] (osr_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/osr_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[20.044436] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/Status.idl\n'}
+[20.074137] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandDrive.idl\n'}
+[20.103406] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandCorner.idl\n'}
+[20.104294] (-) TimerEvent: {}
+[20.134102] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/Status.msg\n'}
+[20.163177] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandDrive.msg\n'}
+[20.194113] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/msg/CommandCorner.msg\n'}
+[20.204479] (-) TimerEvent: {}
+[20.223841] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/package_run_dependencies/osr_interfaces\n'}
+[20.254043] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/parent_prefix_path/osr_interfaces\n'}
+[20.283440] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/ament_prefix_path.sh\n'}
+[20.304648] (-) TimerEvent: {}
+[20.314507] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/ament_prefix_path.dsv\n'}
+[20.343668] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/path.sh\n'}
+[20.374431] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/environment/path.dsv\n'}
+[20.403658] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.bash\n'}
+[20.404758] (-) TimerEvent: {}
+[20.434538] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.sh\n'}
+[20.463452] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.zsh\n'}
+[20.494820] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/local_setup.dsv\n'}
+[20.504939] (-) TimerEvent: {}
+[20.524389] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/package.dsv\n'}
+[20.554585] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/ament_index/resource_index/packages/osr_interfaces\n'}
+[20.584664] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[20.605122] (-) TimerEvent: {}
+[20.615834] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.645247] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.675288] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.705271] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.705807] (-) TimerEvent: {}
+[20.735874] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.766325] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.796111] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfacesConfig.cmake\n'}
+[20.806022] (-) TimerEvent: {}
+[20.827545] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfacesConfig-version.cmake\n'}
+[20.856688] (osr_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/package.xml\n'}
+[20.886066] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_generator_c.so\n'}
+[20.888500] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_generator_c.so" to ""\n'}
+[20.889113] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[20.891689] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[20.892273] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[20.895119] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[20.895721] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_c.so\n'}
+[20.898013] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[20.898518] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.901212] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[20.901714] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[20.904365] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[20.904871] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_cpp.so\n'}
+[20.906112] (-) TimerEvent: {}
+[20.906945] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[21.006270] (-) TimerEvent: {}
+[21.064100] (osr_interfaces) StdoutLine: {'line': b"Listing '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces'...\n"}
+[21.065334] (osr_interfaces) StdoutLine: {'line': b"Compiling '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/__init__.py'...\n"}
+[21.066190] (osr_interfaces) StdoutLine: {'line': b"Listing '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg'...\n"}
+[21.067195] (osr_interfaces) StdoutLine: {'line': b"Compiling '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/__init__.py'...\n"}
+[21.068090] (osr_interfaces) StdoutLine: {'line': b"Compiling '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_corner.py'...\n"}
+[21.068985] (osr_interfaces) StdoutLine: {'line': b"Compiling '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_command_drive.py'...\n"}
+[21.069907] (osr_interfaces) StdoutLine: {'line': b"Compiling '/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages/osr_interfaces/msg/_status.py'...\n"}
+[21.094509] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_generator_py.so\n'}
+[21.096912] (osr_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rover/osr_ws/install/osr_interfaces/lib/libosr_interfaces__rosidl_generator_py.so" to ""\n'}
+[21.097451] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_cExport.cmake\n'}
+[21.098691] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[21.100066] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[21.101915] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[21.103800] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[21.105692] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[21.106393] (-) TimerEvent: {}
+[21.107639] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[21.109522] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[21.111265] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_cppExport.cmake\n'}
+[21.112769] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[21.114093] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[21.115439] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[21.116805] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[21.118116] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[21.119362] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/osr_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[21.120665] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_pyExport.cmake\n'}
+[21.121930] (osr_interfaces) StdoutLine: {'line': b'-- Installing: /home/rover/osr_ws/install/osr_interfaces/share/osr_interfaces/cmake/export_osr_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[21.128821] (osr_interfaces) CommandEnded: {'returncode': 0}
+[21.206949] (-) TimerEvent: {}
+[21.223350] (osr_interfaces) JobEnded: {'identifier': 'osr_interfaces', 'rc': 0}
+[21.227363] (osr_control) JobStarted: {'identifier': 'osr_control'}
+[21.307146] (-) TimerEvent: {}
+[21.407743] (-) TimerEvent: {}
+[21.508411] (-) TimerEvent: {}
+[21.608990] (-) TimerEvent: {}
+[21.709591] (-) TimerEvent: {}
+[21.810170] (-) TimerEvent: {}
+[21.910704] (-) TimerEvent: {}
+[22.011277] (-) TimerEvent: {}
+[22.111903] (-) TimerEvent: {}
+[22.212689] (-) TimerEvent: {}
+[22.313816] (-) TimerEvent: {}
+[22.414469] (-) TimerEvent: {}
+[22.515114] (-) TimerEvent: {}
+[22.615731] (-) TimerEvent: {}
+[22.716462] (-) TimerEvent: {}
+[22.817065] (-) TimerEvent: {}
+[22.917684] (-) TimerEvent: {}
+[23.018271] (-) TimerEvent: {}
+[23.118907] (-) TimerEvent: {}
+[23.219456] (-) TimerEvent: {}
+[23.320120] (-) TimerEvent: {}
+[23.420764] (-) TimerEvent: {}
+[23.521444] (-) TimerEvent: {}
+[23.622121] (-) TimerEvent: {}
+[23.722831] (-) TimerEvent: {}
+[23.823537] (-) TimerEvent: {}
+[23.924252] (-) TimerEvent: {}
+[24.025015] (-) TimerEvent: {}
+[24.126192] (-) TimerEvent: {}
+[24.165326] (osr_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/rover/osr_ws/build/osr_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/rover/osr_ws/build/osr_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rover', 'SSH_CLIENT': 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rover/osr_ws/install/osr_interfaces/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/rover', 'OLDPWD': '/home/rover/osr_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rover', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/rover/osr_ws/venv/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/rover/osr_ws/install/osr_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/rover/osr_ws/venv', 'PWD': '/home/rover/osr_ws/build/osr_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': 'fe80::8d06:25b3:7f76:bd9c%wlan0 58151 fe80::e65f:1ff:fe0c:4181%wlan0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rover/osr_ws/build/osr_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages:/home/rover/osr_ws/install/osr_interfaces/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/rover/osr_ws/install/osr_interfaces'}, 'shell': False}
+[24.226338] (-) TimerEvent: {}
+[24.327010] (-) TimerEvent: {}
+[24.427680] (-) TimerEvent: {}
+[24.528295] (-) TimerEvent: {}
+[24.628874] (-) TimerEvent: {}
+[24.729441] (-) TimerEvent: {}
+[24.830211] (-) TimerEvent: {}
+[24.930798] (-) TimerEvent: {}
+[25.031411] (-) TimerEvent: {}
+[25.132062] (-) TimerEvent: {}
+[25.155370] (osr_control) StdoutLine: {'line': b'running develop\n'}
+[25.232201] (-) TimerEvent: {}
+[25.332776] (-) TimerEvent: {}
+[25.433358] (-) TimerEvent: {}
+[25.533942] (-) TimerEvent: {}
+[25.634527] (-) TimerEvent: {}
+[25.706032] (osr_control) StdoutLine: {'line': b'running egg_info\n'}
+[25.706577] (osr_control) StdoutLine: {'line': b'creating osr_control.egg-info\n'}
+[25.707012] (osr_control) StdoutLine: {'line': b'writing osr_control.egg-info/PKG-INFO\n'}
+[25.707907] (osr_control) StdoutLine: {'line': b'writing dependency_links to osr_control.egg-info/dependency_links.txt\n'}
+[25.708674] (osr_control) StdoutLine: {'line': b'writing entry points to osr_control.egg-info/entry_points.txt\n'}
+[25.709180] (osr_control) StdoutLine: {'line': b'writing requirements to osr_control.egg-info/requires.txt\n'}
+[25.709682] (osr_control) StdoutLine: {'line': b'writing top-level names to osr_control.egg-info/top_level.txt\n'}
+[25.710369] (osr_control) StdoutLine: {'line': b"writing manifest file 'osr_control.egg-info/SOURCES.txt'\n"}
+[25.716854] (osr_control) StdoutLine: {'line': b"reading manifest file 'osr_control.egg-info/SOURCES.txt'\n"}
+[25.719528] (osr_control) StdoutLine: {'line': b"writing manifest file 'osr_control.egg-info/SOURCES.txt'\n"}
+[25.724858] (osr_control) StdoutLine: {'line': b'running build_ext\n'}
+[25.725680] (osr_control) StdoutLine: {'line': b'Creating /home/rover/osr_ws/install/osr_control/lib/python3.10/site-packages/osr-control.egg-link (link to .)\n'}
+[25.729101] (osr_control) StdoutLine: {'line': b'Installing ina260 script to /home/rover/osr_ws/install/osr_control/lib/osr_control\n'}
+[25.730281] (osr_control) StdoutLine: {'line': b'Installing joy_extras script to /home/rover/osr_ws/install/osr_control/lib/osr_control\n'}
+[25.730893] (osr_control) StdoutLine: {'line': b'Installing roboclaw_wrapper script to /home/rover/osr_ws/install/osr_control/lib/osr_control\n'}
+[25.731472] (osr_control) StdoutLine: {'line': b'Installing rover script to /home/rover/osr_ws/install/osr_control/lib/osr_control\n'}
+[25.732065] (osr_control) StdoutLine: {'line': b'Installing servo_control script to /home/rover/osr_ws/install/osr_control/lib/osr_control\n'}
+[25.733137] (osr_control) StdoutLine: {'line': b'\n'}
+[25.733635] (osr_control) StdoutLine: {'line': b'Installed /home/rover/osr_ws/build/osr_control\n'}
+[25.734069] (osr_control) StdoutLine: {'line': b'running symlink_data\n'}
+[25.734568] (-) TimerEvent: {}
+[25.734987] (osr_control) StdoutLine: {'line': b'creating /home/rover/osr_ws/install/osr_control/share/ament_index\n'}
+[25.735544] (osr_control) StdoutLine: {'line': b'creating /home/rover/osr_ws/install/osr_control/share/ament_index/resource_index\n'}
+[25.735937] (osr_control) StdoutLine: {'line': b'creating /home/rover/osr_ws/install/osr_control/share/ament_index/resource_index/packages\n'}
+[25.736656] (osr_control) StdoutLine: {'line': b'symbolically linking /home/rover/osr_ws/build/osr_control/resource/osr_control -> /home/rover/osr_ws/install/osr_control/share/ament_index/resource_index/packages\n'}
+[25.737532] (osr_control) StdoutLine: {'line': b'symbolically linking /home/rover/osr_ws/build/osr_control/package.xml -> /home/rover/osr_ws/install/osr_control/share/osr_control\n'}
+[25.738357] (osr_control) StdoutLine: {'line': b'creating /home/rover/osr_ws/install/osr_control/share/osr_control/launch\n'}
+[25.739134] (osr_control) StdoutLine: {'line': b'creating /home/rover/osr_ws/install/osr_control/share/osr_control/config\n'}
+[25.834939] (-) TimerEvent: {}
+[25.862227] (osr_control) CommandEnded: {'returncode': 0}
+[25.895991] (osr_control) JobEnded: {'identifier': 'osr_control', 'rc': 0}
+[25.898711] (-) EventReactorShutdown: {}

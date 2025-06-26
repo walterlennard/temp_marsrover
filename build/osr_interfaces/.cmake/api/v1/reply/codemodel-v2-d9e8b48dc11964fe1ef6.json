@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-117ccf0d099a941a269b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "osr_interfaces__py",
+					"jsonFile" : "directory-osr_interfaces__py-1b54177ea02bfbe68555.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rover/osr_ws/build/osr_interfaces/osr_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "osr_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_osr_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_osr_interfaces_egg-b7935e1e073a2c6286c3.json",
+					"name" : "ament_cmake_python_build_osr_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_osr_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_osr_interfaces-927acd852b30fb281997.json",
+					"name" : "ament_cmake_python_symlink_osr_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces-e1445468946a5c0d84d3.json",
+					"name" : "osr_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__cpp-f7dd5a9f1da2751fa71e.json",
+					"name" : "osr_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "osr_interfaces__py::@5ffe82fb2530737f5886",
+					"jsonFile" : "target-osr_interfaces__py-e227af6e12ed1d6e6fd1.json",
+					"name" : "osr_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_generator_c-a6bce7d242a153d8945f.json",
+					"name" : "osr_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_generator_py-3c2f6d7993b29d3ef5c6.json",
+					"name" : "osr_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_c-5c0807cd45cb7ddb0a42.json",
+					"name" : "osr_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_c__pyext-c588f006f6adbe775d5c.json",
+					"name" : "osr_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_cpp-63c61c878609830b7b96.json",
+					"name" : "osr_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_fastrtps_c-f57f7c09f008df1430ff.json",
+					"name" : "osr_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_fastrtps_c__pyext-7297c24804eab8286db3.json",
+					"name" : "osr_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_fastrtps_cpp-45744fd40fae9ff2c2bd.json",
+					"name" : "osr_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_introspection_c-641173e28ecaa239ef9e.json",
+					"name" : "osr_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_introspection_c__pyext-c2a9fcf50f7bf55a20e1.json",
+					"name" : "osr_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces__rosidl_typesupport_introspection_cpp-e05c21be49a8b5aa2e43.json",
+					"name" : "osr_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "osr_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-osr_interfaces_uninstall-ad14764accc6389446b9.json",
+					"name" : "osr_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4f70a2a723bd828de714.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rover/osr_ws/build/osr_interfaces",
+		"source" : "/home/rover/osr_ws/src/osr-rover-code/ROS/osr_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

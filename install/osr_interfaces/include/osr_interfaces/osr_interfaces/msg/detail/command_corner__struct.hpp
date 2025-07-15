@@ -1,1 +1,0 @@
-/home/rover/osr_ws/build/osr_interfaces/rosidl_generator_cpp/osr_interfaces/msg/detail/command_corner__struct.hpp

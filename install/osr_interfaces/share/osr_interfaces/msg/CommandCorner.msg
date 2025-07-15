@@ -1,1 +1,0 @@
-/home/rover/osr_ws/src/osr-rover-code/ROS/osr_interfaces/msg/CommandCorner.msg

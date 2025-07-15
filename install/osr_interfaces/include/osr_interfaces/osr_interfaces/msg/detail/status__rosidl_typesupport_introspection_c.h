@@ -1,1 +1,0 @@
-/home/rover/osr_ws/build/osr_interfaces/rosidl_typesupport_introspection_c/osr_interfaces/msg/detail/status__rosidl_typesupport_introspection_c.h

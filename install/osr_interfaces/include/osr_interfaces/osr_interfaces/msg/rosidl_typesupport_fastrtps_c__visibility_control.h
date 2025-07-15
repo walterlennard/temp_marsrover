@@ -1,1 +1,0 @@
-/home/rover/osr_ws/build/osr_interfaces/rosidl_typesupport_fastrtps_c/osr_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

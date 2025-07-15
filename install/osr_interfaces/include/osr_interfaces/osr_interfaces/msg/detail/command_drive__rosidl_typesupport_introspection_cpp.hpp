@@ -1,1 +1,0 @@
-/home/rover/osr_ws/build/osr_interfaces/rosidl_typesupport_introspection_cpp/osr_interfaces/msg/detail/command_drive__rosidl_typesupport_introspection_cpp.hpp

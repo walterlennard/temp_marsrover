@@ -1,1 +1,0 @@
-/home/rover/osr_ws/build/osr_interfaces/ament_cmake_core/osr_interfacesConfig-version.cmake

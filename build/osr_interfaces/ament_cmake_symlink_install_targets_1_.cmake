@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rover/osr_ws/build/osr_interfaces/rosidl_generator_py/osr_interfaces/osr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" "TARGETS" "osr_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.10/site-packages/osr_interfaces")

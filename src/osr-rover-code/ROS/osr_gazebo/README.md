@@ -73,7 +73,7 @@ Ultraschallsensoren werden offiziell nicht unterstützt. Deshalb haben wir hier 
 ![Ubuntu](https://github.com/MikaBabel/IP-Marsrover/blob/main/Assets/Ultraschall%20Rviz.png)
 
 Der Blaue cone visualisiert den Ultraschallsensor
-Hier bild für US einfügen
+
 
 Es hat lange gedauert, den Ultraschallsensor zum laufen zu bringen. Deshalb ist zur Zeit aus Testzwecken nur ein Ultraschallsensor am Linken Vorderen Rad definiert. Um alle anderen Sensoren hinzuzufügen, müsst ihr im "ors.urdf.xarco" für jeden Sensor ein neues XML Konstrukt bauen:
 ### Option 1

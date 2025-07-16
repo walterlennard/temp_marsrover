@@ -1,6 +1,6 @@
 # WSL
 Wenn ihr Windows benutzt, müsst ihr WSL nutzen, um mit der Simulation arbeiten zu können. Das geht ganz einfach: Im Microsoft Store nach "Ubuntu 22.04.5 LTS" suchen und installieren. Es MUSS die Version 22.04.5 LTS sein. 
-Bild vom Microsoft Store mit passender version einfügen
+![Ubuntu](https://github.com/MikaBabel/IP-Marsrover/blob/main/Assets/Ubuntu%20Version.png)
 
 Die alternative ist, eine VM mit dieser Ubuntu Version zu nutzen 
 # Installieren
@@ -19,7 +19,7 @@ source ~/osr/ROS/osr_gazebo/install/setup.bash
 ros2 launch osr_gazebo empty_world.launch.py
 ros2 launch osr_gazebo rviz.launch.py
 ```
-Hier Bild mit Rviz und Gazebo Fenstern einfügen
+
 
 Wichtig: Im offiziellen Repo exisitiert eine COLCON_IGNORE Datei. Diese Datei verhindert, dass das Package gebaut wird. Dieses File muss gelöscht werden. In diesem Repo exisitert es nicht mehr.
 
@@ -63,12 +63,14 @@ Um zu verstehen, wie ros funktioniert, empfehlen wir folgende Quellen durchzugeh
 Sensoren die man hinzufügen möchte, werden im gazebo.urdf.xacro file definiert. Dieses File wird dann vom osr.urdf.xarco file, dass den Rover definiert, importiert.
 ## Lidar Sensor 
 Der Lidar Sensor liefert seine Daten über das Topic "/lidar_plugin/out". Hier im Bild sieht man die Visualisierung der Daten einer Wand über Rviz
+![Ubuntu](https://github.com/MikaBabel/IP-Marsrover/blob/main/Assets/Lidar%20Rviz.png)
 
-Bild von Rviz Visualisierung hinzufügen
+
 
 
 ## Ultraschallsensoren
 Ultraschallsensoren werden offiziell nicht unterstützt. Deshalb haben wir hier einen Workaround gewählt: Einen Lidar-Sensor, der eine Message vom Typ "Range" veröffentlicht. Diesen Datentyp würde ein normaler Ultraschallsensor auch liefern. 
+![Ubuntu](https://github.com/MikaBabel/IP-Marsrover/blob/main/Assets/Ultraschall%20Rviz.png)
 
 Der Blaue cone visualisiert den Ultraschallsensor
 Hier bild für US einfügen

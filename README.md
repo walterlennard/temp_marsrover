@@ -48,7 +48,7 @@ Dieser Abschnitt soll ein Versändnis und Einstiegspunkt für weitere Gruppen bi
      - Betriebssystem: Ubutnu
       - welche Schritte beendet
       - Wie ist Konfig -> Addressen, Ausrichtung der Servos
-   ### Tastenbelegung
+### Tastenbelegung
    | Ort an Controller       | Funktion     |
    |:-------------|:-------------:|
    | Joycon links (links rechts) |  Drehen links oder rechts |
@@ -138,19 +138,11 @@ Beim starten des Rovers über die osr_launch.py gibt es einen INA260 I/O Error.<
 Das Fahren des Rovers funktioniert auch mit diesem Fehler.
 Die Fehlerquelle ist hier unbekannt.
 
-
-
-1. Startup des Rovers
-   Hotspot
-   Tastenbelegung
-
-2. Was haben wir geschafft
-  - Pi Aufsetzen
-      - welche Schritte beendet
-      - Wie ist Konfig -> Addressen, Ausrichtung der Servos
+        
   - Simulation
-  - 
+  - Akkus richtig laden-> Anleitung
 3. Probleme
+Checken des wiring: https://github.com/nasa-jpl/open-source-rover/blob/master/electrical/pcb/README.md
 5. Next Steps / deren Aufgaben
 
 

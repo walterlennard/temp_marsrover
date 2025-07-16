@@ -4,9 +4,17 @@ Als Akkus verwenden wir HRB LiPo Akkus mit 5000 mAh 14.8v 50C und Deans-T Stecke
 
 ![Akku](HRB_LiPo_5000mAh_14_8v_50c.png)
 
+![Akku2](IMG_20250624_160808155.jpg)
+
 Gelagert werden diese in einer Feuer- sowie Explosionssicheren Tasche in Schrank II. 
 
 ![Akku-Tasche](Feuerfeste_explosionssichere_Lipo_Tasche.jpg)
+
+## Laden der Akkus
+
+An der C240 Duo Ladestation können bis zu zwei Akkus geladen werden. Dabei ist zu beachten, dass die Einstellungen den Spezifikationen des Akkus entsprechen müssen. Das Ladegerät sollte im Balance-Modus sein und die Balance-Stecker sollten angeschlossen sein, wie hier:
+
+![Ladegerät](84bc507b-521b-459f-82b5-fb9470bec461.jpg)
 
 ## Probleme mit den Akkus
 

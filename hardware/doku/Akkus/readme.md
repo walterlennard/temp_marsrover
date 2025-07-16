@@ -10,12 +10,17 @@ Gelagert werden diese in einer Feuer- sowie Explosionssicheren Tasche in Schrank
 
 ## Technische Daten
 
-  Typ: Lithium-Polymer (Li-Po)
-  Spannung: 14,8 V (4S, 4 Zellen in Serie)
-  Kapazität: 5000 mAh
-  Entladestrom (C-Rating): 50C → bis zu 250 A kurzfristig
-  Steckertyp: T-Plug
-  Anwendungszweck: Versorgung der Motoren, Sensorik und Steuerungseinheiten
+Typ:                     Lithium-Polymer (Li-Po)
+
+Spannung:                14,8 V (4S, 4 Zellen in Serie)
+
+Kapazität:               5000 mAh
+
+Entladestrom (C-Rating): 50C → bis zu 250 A kurzfristig
+
+Steckertyp:              T-Plug
+
+Anwendungszweck:         Versorgung der Motoren, Sensorik und Steuerungseinheiten
 
 ## Einsatzort
 

@@ -12,7 +12,7 @@ def generate_launch_description():
   pkg_share = FindPackageShare(package=' osr_gazebo').find('osr_gazebo')
 
   # Set the path to the RViz configuration settings
-  default_rviz_config_path = os.path.join(pkg_share, 'rviz/rviz_settings.rviz')
+  default_rviz_config_path = os.path.join(pkg_share, 'rviz/custom_settings.rviz')
 
   # Set the path to the URDF file
   default_urdf_model_path = os.path.join(pkg_share, 'urdf/osr.urdf.xacro')

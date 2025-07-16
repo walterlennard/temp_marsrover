@@ -354,13 +354,6 @@ sudo apt update
 ```
 
 # Probleme
-## Probleme Simulation
-Die Slamtoolbox und Nav2 zeigen beide an, dass Transforms verworfen werden, da sie zu alt sind. Das Problem ist wahrscheinlich, das Nodes verschiedene Zeiten benutzen, nämlich Simtime und Systemtime. Es muss irgendwie möglich sein, alle Nodes so zu konfigurieren, dass sie die Simtime benutzen. 
-Debug Ausgabe:
-```
-Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
-```
-
 
 ## Probleme bei Rover Setup
 ### Kaputte Akkus
@@ -396,6 +389,12 @@ Falls es spätere Probleme mit dem venv environment gibt sollte diese Code Zeile
 Dateien:
 osr_launch.py, ina_260_pub.py
 
+## Probleme Simulation
+Die Slamtoolbox und Nav2 zeigen beide an, dass Transforms verworfen werden, da sie zu alt sind. Das Problem ist wahrscheinlich, das Nodes verschiedene Zeiten benutzen, nämlich Simtime und Systemtime. Es muss irgendwie möglich sein, alle Nodes so zu konfigurieren, dass sie die Simtime benutzen. 
+Debug Ausgabe:
+```
+Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+```
 
 # Weitere Todos für Simulation
 - Pfade im test_world.launch.py dynamisch laden

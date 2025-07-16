@@ -408,7 +408,8 @@ osr_launch.py, ina_260_pub.py
 
 
 # Mögliche Next Steps für die nächste Gruppe
-- Servo vorne links austauschen 
+- Servo vorne links Austauschen
 - Problem mit der Inpace Rotation verstehen und beseitigen, wenn Inplace Drehung gewollt
-- Einbinden der Ultraschall und Lidar sensoren sowohl HW wie SW Seitig
+- Einbinden der Ultraschall und Lidar Sensoren, sowohl HW- wie SW-seitig
 - Fixen der Inplace Rotation
+- Autonome Bewegung des Rovers

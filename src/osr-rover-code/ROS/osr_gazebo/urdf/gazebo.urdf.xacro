@@ -150,6 +150,57 @@
         <pose>0 0 0 0 0 0</pose>
         </sensor>
     </gazebo>
+    <!-- ───────────── LiDAR Link und Joint ───────────── -->
+    <link name="lidar_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.3" />
+            <inertia ixx="1e-4" ixy="0" ixz="0"
+                iyy="1e-4" iyz="0" izz="2e-4" />
+        </inertial>
+    </link>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <origin xyz="0.10 0 0.35" rpy="0 0 0" />
+        <child link="lidar_link" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <!-- ───────────── LiDAR Sensor ───────────── -->
+    <gazebo reference="lidar_link">
+        <sensor name="lidar_sensor" type="gpu_ray">
+            <always_on>true</always_on>
+            <update_rate>10</update_rate>
+
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>1800</samples>
+                        <min_angle>-3.14159</min_angle>
+                        <max_angle> 3.14159</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>16</samples>
+                        <min_angle>-0.2618</min_angle>  
+                        <max_angle> 0.2618</max_angle>  
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.2</min>
+                    <max>50.0</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </ray>
+
+            <plugin name="lidar_plugin"
+                filename="libgazebo_ros_ray_sensor.so">
+                <output_type>sensor_msgs/PointCloud</output_type>
+                <frame_name>lidar_link</frame_name>
+            </plugin>
+        </sensor>
+
+    </gazebo>
 
 
 </robot>

@@ -82,25 +82,6 @@ Wichtig: Jeder Ultraschallsensor soll sein eigenes Topic haben!
 
 # Laden Objekte wie Räume oder Landschaften
 Es sollte möglich sein, erstelle Räume über das Launch File zu starten. Zur Zeit funktioniert das mit dem spawn_entity Node in Option 1
-## Anleitung: Umgebungen (Räume, Landschaften, Objekte) in Gazebo importieren
-### Schritt 1: Umgebungsordner herunterladen
-1. Laden Sie eine der verfügbaren Umgebungen aus dem Umgebung-Ordner herunter.
-2. Alternativ können Sie kompatible Modelle aus dem Internet beziehen.
-### Schritt 2: Umgebungsordner in Gazebo einbinden
-Kopieren Sie den heruntergeladenen Ordner in den Gazebo-Model-Pfad:
-```python
-/home/<IHR_BENUTZERNAME>/.gazebo/models/
-```
-### Schritt 3: Umgebung in Gazebo einfügen
-1. Starte die Simulation in Gazebo.
-2. Klicke links oben auf „Insert“.
-3. Dort findest du die importierten Umgebungen, die du einfach per Klick in die Simulation einfügen kannst.
-
-### Hinweis: Umgebungen aus dem Internet herunterladen
-Falls du eine Umgebung aus dem Internet verwendest, beachte folgende Punkte:
-Die 3D-Modelldatei die Endung ".dae" besitzt.
-Der Ordner muss zusätzlich die Dateien model.sdf und model.config enthalten.
-Falls diese Dateien fehlen, kannst du sie auch selbst erstellen und anpassen.
 
 ## Option 1
 Alles über Launchdatei Laden. Die Beste Option
@@ -143,9 +124,25 @@ gazebo = IncludeLaunchDescription(
 
 
 ## Option 2
-empty_world.launch.py starten, und über Gazebo GUI Modles wie z.B. einen Raum laden
-1. Im Reiter "insert" mit "Add Path" einen Pfad hinzufügen, in denen Models liegen, z.B. den osr_gazebo/models Ordner. 
-2. Es werden alle Verfügbaren Models angezeigt. Gewünschtes Model per Drag & Drop in die Simulation ziehen und platzieren
+### Schritt 1: Umgebungsordner herunterladen
+1. Ladet eine der verfügbaren Umgebungen aus dem Umgebung-Ordner herunter.
+2. Alternativ könnnt ihr kompatible Modelle aus dem Internet beziehen.
+### Schritt 2: Umgebungsordner in Gazebo einbinden
+Kopiert ihr den heruntergeladenen Ordner in den Gazebo-Model-Pfad:
+```python
+/home/<IHR_BENUTZERNAME>/.gazebo/models/
+```
+### Schritt 3: Umgebung in Gazebo einfügen
+1. Starte die Simulation in Gazebo.
+2. Klicke links oben auf „Insert“.
+3. Dort findest du die importierten Umgebungen, die du einfach per Klick in die Simulation einfügen kannst.
+
+### Hinweis: Umgebungen aus dem Internet herunterladen
+Falls du eine Umgebung aus dem Internet verwendest, beachte folgende Punkte:
+Die 3D-Modelldatei die Endung ".dae" besitzt.
+Der Ordner muss zusätzlich die Dateien model.sdf und model.config enthalten.
+Falls diese Dateien fehlen, kannst du sie auch selbst erstellen und anpassen.
+
 ## Option 3
 ### Welt erstellen
 Wenn ihr eine neue Welt erstellen wollt, müsst ihr den Rover als sdf Datei darstellen. Folgendes im urdf ordner ausführen

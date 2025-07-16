@@ -8,13 +8,13 @@ Die alternative ist, eine VM mit dieser Ubuntu Version zu nutzen
 1. ROS2 Humble installieren: https://docs.ros.org/en/humble/Installation.html
 2. ROS2 Packages Installieren: https://github.com/nasa-jpl/osr-rover-code/tree/master/ROS/osr_gazebo#ros-package-installation
 3. Dieses Repository in das Homeverzeichnis eures Accounts klonen
-4. im osr_gazebo Ordner den Befehl "colcon build --symlink-install" ausführen. Durch die Option symlink-install wird immer automatisch gebaut, wenn ihr Änderungen im code vornehmt. Damit die Änderungen in kraft treten, müsst ihr die betroffenen Nodes neu starten. WICHTIG: colon build muss in osr_gazebo ausgeführt werden, nicht in einem Unterordner!!!
+4. im osr_gazebo Ordner den Befehl "colcon build --symlink-install" ausführen. Durch die Option symlink-install wird immer automatisch gebaut, wenn ihr Änderungen im code vornehmt. Damit die Änderungen in kraft treten, müsst ihr die betroffenen Nodes neu starten. WICHTIG: colcon build muss in osr_gazebo ausgeführt werden, nicht in einem Unterordner!!!
 5. Sourcen der Files (Erklärung unter "Sourcing") 
 ```bash
 source /opt/ros/humble/setup.bash
 source ~/osr/ROS/osr_gazebo/install/setup.bash
 ```
-4. Gazbeo Simulation und rviz Starten
+6. Gazbeo Simulation und rviz Starten
 ```bash
 ros2 launch osr_gazebo empty_world.launch.py
 ros2 launch osr_gazebo rviz.launch.py
@@ -56,12 +56,13 @@ Um zu verstehen, wie ros funktioniert, empfehlen wir folgende Quellen durchzugeh
 # Projektstruktur
 - launch -> Hier befinden sich alle launchfiles. Ihr könnt hier eigene launchfiles hinzufügen
 - urdf -> Hier befinden sich alle Dateien, die den Rover und die Simulation definieren
+- worlds -> Fertige Welten zum laden
 - models -> Hier befinden sich Models für die Simulation, z.B. Räume die man erstellt hat
 - config -> Hier befinden sich config files für Nav2 und slam_toolbox
 # Sensoren
 Sensoren die man hinzufügen möchte, werden im gazebo.urdf.xacro file definiert. Dieses File wird dann vom osr.urdf.xarco file, dass den Rover definiert, importiert.
 ## Lidar Sensor 
- Der Lidar Sensor liefert seine Daten über das Topic "/liadar_plugin/out". Hier im Bild sieht man die Visualisierung der Daten einer Wand über Rviz
+Der Lidar Sensor liefert seine Daten über das Topic "/lidar_plugin/out". Hier im Bild sieht man die Visualisierung der Daten einer Wand über Rviz
 
 Bild von Rviz Visualisierung hinzufügen
 
@@ -178,8 +179,7 @@ Prozesse wie " load_joint_state_controller", "rover_wheel_controller" oder "ser
 
 
 # Rviz2
-Mit Rviz lassen sich alle Daten, die ROS2 oder Gazebo über Topics liefern, visualisieren. Was genau gezeigt wird,  steht in der custom_settings.rviz im rviz Ordner. Diese Settingsdatei wird in der rviz.launch.py geladen. Wenn ihr eine andere Settingsdatei laden wollt, könnt ihr diese im rviz Ordner ablegen und in der rviz.launch.py laden. Um eine Settingsdatei zu erstellen, 
-
+Mit Rviz lassen sich alle Daten, die ROS2 oder Gazebo über Topics liefern, visualisieren. Was genau gezeigt wird,  steht in der custom_settings.rviz im rviz Ordner. Diese Settingsdatei wird in der rviz.launch.py geladen. Wenn ihr eine andere Settingsdatei laden wollt, könnt ihr diese im rviz Ordner ablegen und in der rviz.launch.py laden. Um eine Settingsdatei zu erstellen, könnt ihr eigene Displays in Rviz hinzufügen, und die aktuelle ansicht per File->save_as im rviz ordner ablegen. 
 
 # Nav2 und Slam
 Siehe: https://docs.nav2.org/tutorials/docs/navigation2_with_slam.html
@@ -242,6 +242,8 @@ Desired controller update period (0.01 s) is slower than the gazebo simulation p
 - Position des Room Models anpassen, so dass der Rover innerhalb des Raums Startet
 - Zeitproblem im Nav2 Kontext lösen (Symtime vs. Systemtime)
 - launch file für Nav2 + slam_toolbox schreiben 
-- Restliche Ultraschallsensoren hinzufügen
+- Wenn Nav2 und Slam funktionieren, eine Map erstellen und laden
+- yaml files im launchfile für Nav2 + Slam werden noch nicht richtig geladen
+- Restliche Ultraschallsensoren hinzufügen, am besten per xacro macro
 - Ultraschallsensoren in Rviz mit "Range" Display anzeigen
-- 
+- 3D Modelle für Ultraschallsensoren und Lidar hinzufügen. Passende Modelle findet man unter https://app.gazebosim.org/fuel/models

@@ -14,9 +14,15 @@ Die auswertung der Sensoren erfolgt nur nach einer i2c anfrage an den Arduinio N
 ### Software
 Die Auswertung ist in einer .ino Datei geschrieben, welche auf dem Arduino Nano ausgeführt wird.
 
-Der Arduino hat die i2c Adresse 0x40. Um Daten anzufragen muss an den Arduino eine i2c Anfrage gesendet werden.
+Der Arduino hat die i2c Adresse 8. Um Daten anzufragen muss an den Arduino eine i2c Anfrage gesendet werden.
 
 ! Diese Funktion ist noch nicht vom Raspberry Pi aus implementiert und muss noch ende zu ende getestet werden.
+
+
+#### Code
+[Code auf dem Arduino](../../../files/ultraschallsensor/RoverUltrasonicSlave/RoverUltrasonicSlave.ino)
+
+Dieser Code braucht noch die HCSR04 Library, welche noch installiert werden muss. Dokumentation dazu ist [hier](https://github.com/gamegine/HCSR04-ultrasonic-sensor-lib) zu finden.
 
 ### Elektronik
 

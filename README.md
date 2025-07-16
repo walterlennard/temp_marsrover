@@ -17,7 +17,7 @@ Um den Respberry Pi des Rovers über SSH anzusteuern, muss ein Hotspot mit den f
 ## Controller an den Pi Anschließen
 Als nächstes wird ein Controller über die USB Schnittstellen des Pis angeschlossen.   
 Bisher wurde dafür ein **XBox 360 Controller** dafür verwendet.      
-- Soll ein anderer Controller verwedet werden und unerwartet die Bewegung nicht mehr wie beschrieben funktionieren, kann das [Buttonmapping]([url](https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61)) angepasst werden.
+- Soll ein anderer Controller verwedet werden und unerwartet die Bewegung nicht mehr wie beschrieben funktionieren, kann das [Buttonmapping]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main?tab=readme-ov-file#controller-belegung)) angepasst werden.
       
 
 ## SSH Verbindung zum Rover
@@ -40,15 +40,15 @@ Nach erfolgreicher Erstanmeldung dann über:
       ssh rover@marsrover
       Passwort: mars
 ## Rover steuern
-Nach Befolgen dieser Schritten kann der Rover mit dem Controller gesteuert werden. Siehe hierfür [Tastenbelegung]([url](https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61))
+Nach Befolgen dieser Schritten kann der Rover mit dem Controller gesteuert werden. Siehe hierfür [Tastenbelegung]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main?tab=readme-ov-file#tastenbelegung-controller))
 
 # Einstieg in das Projekt
 Dieser Abschnitt soll ein Versändnis und Einstiegspunkt für weitere Gruppen bieten.
 Der Abschnitt beschreibt den Bearbeitungsgrad dieser Tutorials   
 
 ### Pi Setup
-Die [vorgegeben Arbeitsschritte]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code)) "Raspberry Pi setup" sowie "Rover code bringup" wurden vollständig abgeschlossen, 2 Probleme sind dabei offen geblieben, die unter Probleme aufgelistet wurden.   
-Auf dem Pi wurde Ubuntu Jammy (22.04.5 LTS) installiert.
+Die [vorgegeben Arbeitsschritte]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code)) "**Raspberry Pi setup**" sowie "**Rover code bringup**" wurden vollständig abgeschlossen, manche Probleme sind dabei offen geblieben, die am Ende dieser Doku unter [Problemen]([url](https://github.com/MikaBabel/IP-Marsrover/edit/main/README.md#probleme)) aufgelistet wurden.     
+Auf dem Pi wurde **Ubuntu Jammy (22.04.5 LTS)** installiert, sowie **ROS2 Humble**   
 Innerhalb der Schritte wurden ausßerdem folgende Punkte bearbeitet:
 
 ### Tastenbelegung Controller
@@ -363,6 +363,13 @@ Desired controller update period (0.01 s) is slower than the gazebo simulation p
 
 
 ## Probleme bei Rover Setup
+### Servo Hardware Fehler
+Servo vorne links hat Probleme zuverlässig die Winkel auszuführen, manchmal führt er die Einlenkung nicht vollständig aus.
+
+### Inplace Rotation
+Über den rechten Joycon soll die In Place Rotation ausgeführt werden. Dabei bewegen sich aber nur 2 der 4 Servos korrekt.   
+Ursache dafür ist, dass die Servos aus Sicherheitsgründen abwerk nur auf einen
+
 ### INA260
 <img width="391" height="368" alt="Bildschirmfoto 2025-07-16 um 11 06 26" src="https://github.com/user-attachments/assets/b3c1cbb0-a2ee-405b-815d-cdcb2510ee11" /> <br>
 Beim überprüfen des ina260 über test_ina260.py war die Adresse nicht auf **0x45** sondern auf 0x40. <br>
@@ -388,7 +395,7 @@ Dateien:
 osr_launch.py, ina_260_pub.py
 
 
-# Todos Simulation
+# Weitere Todos für Simulation
 - Pfade im test_world.launch.py dynamisch laden
 - Position des Room Models anpassen, so dass der Rover innerhalb des Raums Startet
 - Zeitproblem im Nav2 Kontext lösen (Symtime vs. Systemtime)
@@ -398,3 +405,10 @@ osr_launch.py, ina_260_pub.py
 - Restliche Ultraschallsensoren hinzufügen, am besten per xacro macro
 - Ultraschallsensoren in Rviz mit "Range" Display anzeigen
 - 3D Modelle für Ultraschallsensoren und Lidar hinzufügen. Passende Modelle findet man unter https://app.gazebosim.org/fuel/models
+
+
+# Mögliche Next Steps für die nächste Gruppe
+- Servo vorne links austauschen 
+- Problem mit der Inpace Rotation verstehen und beseitigen, wenn Inplace Drehung gewollt
+- Einbinden der Ultraschall und Lidar sensoren sowohl HW wie SW Seitig
+- Fixen der Inplace Rotation

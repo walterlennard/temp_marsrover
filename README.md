@@ -1,54 +1,57 @@
-## Startup Rovers
+# StartUp des Rovers
 Durch diesen Abschnitt wird die Inbetriebnahme des Rovers und die dazu nötigen Schritte beschrieben.
-### Hotspot Erstellen
+## Hotspot Erstellen
 Um den Respberry Pi des Rovers über SSH anzusteuern, muss ein Hotspot mit den folgenden Daten erstellt werden:
       SSID/Name: MarsNet
       Passwort: MarsRover
   - Während unserer Arbeit hat es sich als satbiler erwiesen, den **Hotspot über ein seperates Samrtphone** statt den Cleint Rechner zu öffnen.   
   - Um die **IP Addresse des Pis** für die erste SSH Verbindung zu erhalten, kann dies jedoch ein **Hotspot über Windows** liefern.
 
-### Powerup Rover
+## PowerUp Rover
 1. Akku Einlegen und Anschließen
 2. Schalter an der Rückseite des Rovers nach oben Umlegen.
       - Das Display auf der Rckseite sollte aufleuchten und **mindestens ~11V** anzeigen.
       - Die LEDS des Brainboads sollten nun auch die 5V bestätigen.
       - Falls der die Voltzahl darunter liegt, den Akku laden. link zum richtig laden einfügen
             
-### Controller an den Pi Anschließen
+## Controller an den Pi Anschließen
 Als nächstes wird ein Controller über die USB Schnittstellen des Pis angeschlossen.   
 Bisher wurde dafür ein **XBox 360 Controller** dafür verwendet.      
-- Soll ein anderer Controller verwedet werden und unerwartet die Bewegung nicht mehr wie beschrieben funktionieren, kann das Buttonmapping angepasst werden.
+- Soll ein anderer Controller verwedet werden und unerwartet die Bewegung nicht mehr wie beschrieben funktionieren, kann das [Buttonmapping]([url](https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61)) angepasst werden.
       
 
-### SSH Verbindung zum Rover
+## SSH Verbindung zum Rover
 Nachdem sich der PI mit dem Hotspot verbunden hat und im Netz sichtbar ist, werden folgede Schritte ausgeführt:
 - Der Pi kann dabei bis zu 5 min brauchen bis er vollständig erreichbar ist.
       
-#### 1. Mit bekannter IP Addresse
+### 1. Mit bekannter IP Addresse
 Falls die IP Addresse des PIs bekannt ist, zb durch Auslesen über den Windows Hotspot, erfolgt die erste Verbindung wie folgt:
  
       ssh rover@IP-des-Pis
       Passwort: mars
-#### 2. Über MacOs, mittels .local
+### 2. Über MacOs, mittels .local
 Falls die IP noch nicht bekannt ist, unterstüzt MacOS Bonjour:
 
       ssh rover@marsrover.local
       Passwort: mars
-#### 3. Nach erfolgreicher Anmeldung
+### 3. Nach erfolgreicher Anmeldung
 Nach erfolgreicher Erstanmeldung dann über:
    
       ssh rover@marsrover
       Passwort: mars
-### Rover steuern
-Nach diesen Schritten kann der Rover mit den Tasten , link buttonbelegung, gesteuert werden
+## Rover steuern
+Nach Befolgen dieser Schritten kann der Rover mit dem Controller gesteuert werden. Siehe hierfür [Tastenbelegung]([url](https://gist.github.com/citrusui/07978f14b11adada364ff901e27c7f61))
 
-## Unsere Arbeit
+# Einstieg in das Projekt
 Dieser Abschnitt soll ein Versändnis und Einstiegspunkt für weitere Gruppen bieten.
-  - Pi Aufsetzen etc
-     - Betriebssystem: Ubutnu
-      - welche Schritte beendet
-      - Wie ist Konfig -> Addressen, Ausrichtung der Servos
-### Tastenbelegung
+Der Abschnitt beschreibt den Bearbeitungsgrad dieser Tutorials   
+
+### Pi Setup
+Die [vorgegeben Arbeitsschritte]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code)) "Raspberry Pi setup" sowie "Rover code bringup" wurden vollständig abgeschlossen, 2 Probleme sind dabei offen geblieben, die unter Probleme aufgelistet wurden.   
+Auf dem Pi wurde Ubuntu Jammy (22.04.5 LTS) installiert.
+Innerhalb der Schritte wurden ausßerdem folgende Punkte bearbeitet:
+
+### Tastenbelegung Controller
    | Ort an Controller       | Funktion     |
    |:-------------|:-------------:|
    | Joycon links (links rechts) |  Drehen links oder rechts |
@@ -56,8 +59,7 @@ Dieser Abschnitt soll ein Versändnis und Einstiegspunkt für weitere Gruppen bi
    |  Joycon rechts (links rechts) | Im Kreis rotieren (eingeschränkt) |
    |A|Fahren aktivieren (dauerhaft drücken)|
    |B|Turbo Button(deutlich schneller) Vorsicht!|
-  
-## Getestete/Konfigurierte Rover-Komponenten
+
 ### Servos
 Es gibt vier Servos, jeder Servo ist für einen Roboterarm zuständig.<br>
 Die Servos werden über ihren jeweiligen Channel mit dem Mainboard verbunden.<br>
@@ -90,7 +92,7 @@ Hierbei kann man auch die Richtung der Motoren einstellen, z.B. falls sich ein M
 
 ## Controller Belegung
 Jeder Button/Axe auf dem Controller kann verwendet werden um eine der oben gennanten Funktionen bei der Tastenbelegung annzunehmen.
-Dies wird in der Datei ... eingestellt.
+Dies wird in der Datei [osr_launch.py](https://github.com/MikaBabel/IP-Marsrover/blob/main/src/osr-rover-code/ROS/osr_bringup/launch/osr_launch.py) eingestellt.
 
 | Axes     | Ort an Controller  |
 |:-------------|:-------------:|
@@ -114,36 +116,6 @@ Dies wird in der Datei ... eingestellt.
 | 6      | Back               |
 | 7      | Start              |
 | 8      | Xbox-Button        |
-
-## Venv
-Damit Python die richtigen Packages vom Venv nimmt, musste in einigen Dateien das Venv explizit angegeben werden.
-Falls es spätere Probleme mit dem venv environment gibt sollte diese Code Zeile in den folgenden Dateien auskommentiert werden: <br>
-venv_path = '/home/rover/osr_ws/venv/bin/activate_this.py'<br>
-with open(venv_path) as f: <br>
-   exec(f.read(),{'__file__':venv_path})
-
-Dateien:
-osr_launch.py, ina_260_pub.py
-
-## Probleme bei Rover Setup
-
-### INA260
-<img width="391" height="368" alt="Bildschirmfoto 2025-07-16 um 11 06 26" src="https://github.com/user-attachments/assets/b3c1cbb0-a2ee-405b-815d-cdcb2510ee11" /> <br>
-Beim überprüfen des ina260 über test_ina260.py war die Adresse nicht auf 0x45 sondern auf 0x40. <br>
-Diese Adresse wurde dann in den folgenden Dateien geändert:
-~/osr_ws/venv/lib/python3.10/site-packages/ina260
-/osr_ws/build/osr_control/osr_control$ nano ina_260_pub.py
-
-Beim starten des Rovers über die osr_launch.py gibt es einen INA260 I/O Error.<br>
-Das Fahren des Rovers funktioniert auch mit diesem Fehler.
-Die Fehlerquelle ist hier unbekannt.
-
-        
-  - Simulation
-  - Akkus richtig laden-> Anleitung
-3. Probleme
-Checken des wiring: https://github.com/nasa-jpl/open-source-rover/blob/master/electrical/pcb/README.md
-5. Next Steps / deren Aufgaben
 
 
 # Simulation
@@ -381,8 +353,8 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 ```
 
-
 # Probleme
+## Probleme Simulation
 Die Slamtoolbox und Nav2 zeigen beide an, dass Transforms verworfen werden, da sie zu alt sind. Das Problem ist wahrscheinlich, das Nodes verschiedene Zeiten benutzen, nämlich Simtime und Systemtime. Es muss irgendwie möglich sein, alle Nodes so zu konfigurieren, dass sie die Simtime benutzen. 
 Debug Ausgabe:
 ```
@@ -390,7 +362,33 @@ Desired controller update period (0.01 s) is slower than the gazebo simulation p
 ```
 
 
-# TODOS
+## Probleme bei Rover Setup
+### INA260
+<img width="391" height="368" alt="Bildschirmfoto 2025-07-16 um 11 06 26" src="https://github.com/user-attachments/assets/b3c1cbb0-a2ee-405b-815d-cdcb2510ee11" /> <br>
+Beim überprüfen des ina260 über test_ina260.py war die Adresse nicht auf **0x45** sondern auf 0x40. <br>
+Diese Adresse wurde dann in den folgenden Dateien geändert:
+~/osr_ws/venv/lib/python3.10/site-packages/ina260
+~/osr_ws/build/osr_control/osr_control$ nano ina_260_pub.py
+
+### INA260 Startup
+Beim starten des Rovers über die osr_launch.py gibt es einen INA260 I/O Error.<br>
+Das Fahren des Rovers funktioniert auch mit diesem Fehler.
+Die Fehlerquelle ist hier unbekannt.
+
+## Venv
+Damit Python die richtigen Packages vom Venv nimmt, musste in einigen Dateien das Venv explizit angegeben werden.
+Falls es spätere Probleme mit dem venv environment gibt sollte diese Code Zeile in den folgenden Dateien auskommentiert werden:    
+      
+      <br>
+      venv_path = '/home/rover/osr_ws/venv/bin/activate_this.py'<br>
+      with open(venv_path) as f: <br>
+         exec(f.read(),{'__file__':venv_path})
+
+Dateien:
+osr_launch.py, ina_260_pub.py
+
+
+# Todos Simulation
 - Pfade im test_world.launch.py dynamisch laden
 - Position des Room Models anpassen, so dass der Rover innerhalb des Raums Startet
 - Zeitproblem im Nav2 Kontext lösen (Symtime vs. Systemtime)
@@ -400,4 +398,3 @@ Desired controller update period (0.01 s) is slower than the gazebo simulation p
 - Restliche Ultraschallsensoren hinzufügen, am besten per xacro macro
 - Ultraschallsensoren in Rviz mit "Range" Display anzeigen
 - 3D Modelle für Ultraschallsensoren und Lidar hinzufügen. Passende Modelle findet man unter https://app.gazebosim.org/fuel/models
-

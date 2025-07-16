@@ -1,6 +1,6 @@
 # Akkus
 
-Als Akkus verwenden wir HRB LiPo Akkus mit 5000 mAh 14.8v 50C und Deans-T Stecker/T-Plug. 
+Als Akkus verwenden wir HRB LiPo Akkus mit 5000 mAh 14.8v 50C und Deans-T Stecker/T-Plug. Über diesen wird der Akku mit dem Rover verbunden.
 
 ![Akku](HRB_LiPo_5000mAh_14_8v_50c.png)
 

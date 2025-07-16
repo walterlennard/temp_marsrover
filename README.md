@@ -47,7 +47,7 @@ Dieser Abschnitt soll ein Versändnis und Einstiegspunkt für weitere Gruppen bi
 Der Abschnitt beschreibt den Bearbeitungsgrad dieser Tutorials   
 
 ### Pi Setup
-Die [vorgegeben Arbeitsschritte](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code) "**Raspberry Pi setup**" sowie "**Rover code bringup**" wurden vollständig abgeschlossen, manche Probleme sind dabei offen geblieben, die am Ende dieser Doku unter [Problemen](https://github.com/MikaBabel/IP-Marsrover/main/README.md#probleme) aufgelistet wurden.     
+Die [vorgegeben Arbeitsschritte](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code) "**Raspberry Pi setup**" sowie "**Rover code bringup**" wurden vollständig abgeschlossen, manche Probleme sind dabei offen geblieben, die am Ende dieser Doku unter [Problemen](https://github.com/MikaBabel/IP-Marsrover/blob/main/README.md#probleme) aufgelistet wurden.     
 Auf dem Pi wurde **Ubuntu Jammy (22.04.5 LTS)** installiert, sowie **ROS2 Humble**   
 Innerhalb der Schritte wurden ausßerdem folgende Punkte bearbeitet:
 

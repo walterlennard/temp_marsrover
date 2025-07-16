@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="MarsSurface2">
+    <!-- Statisch (für Terrains/Umgebungen empfohlen) -->
+    <static>true</static>
+
+    <!-- Haupt-Link -->
+    <link name="surface_link">
+      <visual name="surface_visual">
+        <geometry>
+          <mesh>
+            <uri>model://MarsSurface2/meshes/MarsSurface2.dae</uri>
+            <!-- Skalierung bei Bedarf anpassen (z. B. 0.5 0.5 0.5) -->
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <!-- Optional: Material falls die .dae keine Texturen enthält -->
+        <material>
+          <ambient>0.6 0.3 0.1 1</ambient>  <!-- Mars-typische Farbe -->
+          <diffuse>0.6 0.3 0.1 1</diffuse>
+        </material>
+      </visual>
+
+      <!-- Kollisionsmesh (kann identisch mit Visual sein) -->
+      <collision name="surface_collision">
+        <geometry>
+          <mesh>
+            <uri>model://MarsSurface2/meshes/MarsSurface2.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

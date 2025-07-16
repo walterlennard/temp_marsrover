@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="mars_landscape">
+    <pose>0 0 0 0 0 0</pose>  <!-- 1.5708 =>  90° Drehung um X-Achse -->
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>file://model.obj</uri>
+            <scale>0.2 0.2 0.2</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://model.mtl</uri>
+            <name>tex_u1_v1</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
+

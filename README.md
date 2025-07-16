@@ -9,7 +9,7 @@
    |A|Fahren aktivieren (dauerhaft drücken)|
    |B|Turbo Button(deutlich schneller) Vorsicht!|
   
-## Wichtige Rover Komponenten
+## Getestete/Konfigurierte Rover-Komponenten
 ### Servos
 Es gibt vier Servos, jeder Servo ist für einen Roboterarm zuständig.<br>
 Die Servos werden über ihren jeweiligen Channel mit dem Mainboard verbunden.<br>

@@ -37,10 +37,6 @@ Die Sensoren sind so verlötet, dass alle Sensoren gleichzeitig das Trigger Sign
 
 ### Befestigung am Rover
 
-Die Halterungen für die Sensoren sind 3D-gedruckt, das Modell dafür ist [hieri](../../../../hardware/files/ultraschallsensor/Halterung_Ultraschallsensor.stl) gespeichert. Sie sind mit B2-Schrauben und Muttern am Rover befestigt worden. 
+Die Halterungen für die Sensoren sind 3D-gedruckt, das Modell dafür ist [hier](../../../../hardware/files/ultraschallsensor/Halterung_Ultraschallsensor.stl) gespeichert. Sie sind mit B2-Schrauben und Muttern am Rover befestigt worden. Für die endgültige Befestigung fehlen pro Sensor 4 kleine Schrauben samt Muttern pro Sensor.
 
 ![Halterung_Vorne](2025-07-16-19-07-09.jpg)
-
-Für die endgültige Befestigung fehlen pro Sensor 4 kleine Schrauben samt Muttern pro Sensor.
-
-![Halterung_Seite](2025-07-16-19-07-08.jpg)

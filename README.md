@@ -17,7 +17,7 @@ Um den Respberry Pi des Rovers über SSH anzusteuern, muss ein Hotspot mit den f
 ## Controller an den Pi Anschließen
 Als nächstes wird ein Controller über die USB Schnittstellen des Pis angeschlossen.   
 Bisher wurde dafür ein **XBox 360 Controller** dafür verwendet.      
-- Soll ein anderer Controller verwedet werden und unerwartet die Bewegung nicht mehr wie beschrieben funktionieren, kann das [Buttonmapping]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main?tab=readme-ov-file#controller-belegung)) angepasst werden.
+- Soll ein anderer Controller verwedet werden und unerwartet die Bewegung nicht mehr wie beschrieben funktionieren, kann die [Tastenbelegung](https://github.com/MikaBabel/IP-Marsrover/tree/main?tab=readme-ov-file#controller-belegung) angepasst werden.
       
 
 ## SSH Verbindung zum Rover
@@ -40,14 +40,14 @@ Nach erfolgreicher Erstanmeldung dann über:
       ssh rover@marsrover
       Passwort: mars
 ## Rover steuern
-Nach Befolgen dieser Schritten kann der Rover mit dem Controller gesteuert werden. Siehe hierfür [Tastenbelegung]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main?tab=readme-ov-file#tastenbelegung-controller))
+Nach Befolgen dieser Schritten kann der Rover mit dem Controller gesteuert werden. Siehe hierfür [Tastenbelegung](https://github.com/MikaBabel/IP-Marsrover/tree/main?tab=readme-ov-file#tastenbelegung-controller)
 
 # Einstieg in das Projekt
 Dieser Abschnitt soll ein Versändnis und Einstiegspunkt für weitere Gruppen bieten.
 Der Abschnitt beschreibt den Bearbeitungsgrad dieser Tutorials   
 
 ### Pi Setup
-Die [vorgegeben Arbeitsschritte]([url](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code)) "**Raspberry Pi setup**" sowie "**Rover code bringup**" wurden vollständig abgeschlossen, manche Probleme sind dabei offen geblieben, die am Ende dieser Doku unter [Problemen]([url](https://github.com/MikaBabel/IP-Marsrover/edit/main/README.md#probleme)) aufgelistet wurden.     
+Die [vorgegeben Arbeitsschritte](https://github.com/MikaBabel/IP-Marsrover/tree/main/src/osr-rover-code) "**Raspberry Pi setup**" sowie "**Rover code bringup**" wurden vollständig abgeschlossen, manche Probleme sind dabei offen geblieben, die am Ende dieser Doku unter [Problemen](https://github.com/MikaBabel/IP-Marsrover/edit/main/README.md#probleme) aufgelistet wurden.     
 Auf dem Pi wurde **Ubuntu Jammy (22.04.5 LTS)** installiert, sowie **ROS2 Humble**   
 Innerhalb der Schritte wurden ausßerdem folgende Punkte bearbeitet:
 

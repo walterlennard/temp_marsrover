@@ -363,7 +363,10 @@ Servo vorne links hat Probleme zuverlässig die Winkel auszuführen, manchmal f�
 
 ### Inplace Rotation
 Über den rechten Joycon soll die In Place Rotation ausgeführt werden. Dabei bewegen sich aber nur 2 der 4 Servos korrekt.   
-Ursache dafür ist, dass die Servos aus Sicherheitsgründen abwerk nur auf einen
+Ursache dafür ist, dass die Servos einen zu hohrn Wert zum Einschlagen gegeben bekommrn und diesen aus abwerk Sicherheitsgründen nicht abbilden.
+Lösungen könnten dafür sein:   
+Servos neu kalibrieren bzw anders einbauen oder den Code durch abändern, sodass korrekte Winkel an die Servos gegeben werden. Die sich bewegenden Servos schlagen übrigens zu weit ein, müsste genauso ausgebessert werden.   
+Kalibrierung der Servos findet dabei in dem Schritt "Rover code bringup" statt   
 
 ### INA260
 <img width="391" height="368" alt="Bildschirmfoto 2025-07-16 um 11 06 26" src="https://github.com/user-attachments/assets/b3c1cbb0-a2ee-405b-815d-cdcb2510ee11" /> <br>
